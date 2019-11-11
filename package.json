@@ -1,0 +1,31 @@
+{
+  "name": "front-wizard",
+  "version": "1.0.1",
+  "description": "",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp serve"
+  },
+  "author": "Vladimir Korshunov",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "9.6.1",
+    "browser-sync": "2.26.7",
+    "gulp": "4.0.2",
+    "gulp-csso": "3.0.1",
+    "gulp-filter": "6.0.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-rename": "1.4.0",
+    "gulp-sass": "4.0.2",
+    "gulp-svgstore": "7.0.1"
+  },
+  "dependencies": {
+    "css-mqpacker": "7.0.0",
+    "del": "5.0.0",
+    "eslint": "6.0.1",
+    "gulp-better-rollup": "4.0.1",
+    "gulp-sourcemaps": "2.6.5",
+    "rollup": "1.16.7"
+  }
+}
