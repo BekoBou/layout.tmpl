@@ -26,9 +26,6 @@ const style = () => {
       }),
       mqpacker({sort: true})
     ]))
-    .pipe(rename({
-      suffix: '.2019'
-    }))
     .pipe(sourcemaps.write('.'))
     .pipe(dest('dist/css'))
     .pipe(filter('**/*.css', {restore: true}))
@@ -67,7 +64,7 @@ const copyHtml = () => {
 
 const copyImages = () => {
   return src('src/img/**/*.{jpg,jpeg,png,svg}')
-    .pipe(dest('dist/img/2019/'))
+    .pipe(dest('dist/img/'))
     .pipe(server.stream());
 };
 
@@ -79,7 +76,7 @@ const createSprite = () => {
   return src('src/img/icon-*.svg')
     .pipe(sprite())
     .pipe(rename('sprite.svg'))
-    .pipe(dest('dist/img/2019/'));
+    .pipe(dest('dist/img/'));
 };
 
 const copyFonts = () =>{
